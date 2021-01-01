@@ -1,13 +1,24 @@
 $mainfontfamily:arial,sans-serif ;
-
+$primaryBackgroundColor-buttons: #f8f9fa;
+$secondaryBackgroundColor-navbar: #f2f2f2;
 
 /**********************body***********************/
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
-    padding: 0px 15px;
+    padding: 10px 15px;
     margin: 0;
 }
 
+
+input[type="text"] {
+    font-size:25px;
+}
 /**********************header********************/
 
 .navbarUlDesign {
@@ -37,4 +48,82 @@ body {
 
 .mainContentDesign {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+    .mainContentSearchBarDesign {
+        margin-top: 25px;
+    }
+    .mainContentSearchBarDesign input {
+        width: 500px;
+        height: 35px;
+        border-radius: 50px;
+        border: 1px solid rgb(190, 190, 190);
+        padding: 2px 25px;
+        font-size: 13px;
+        outline: none;
+        &:hover {
+            transition: 0.2s;
+            box-shadow: 0px 2px 10px #c5c5c5;
+        }
+    }
+    .buttonsContainerDesign {
+        margin-top: 25px;
+        .buttonsDesign {
+            padding: 10px 15px;
+            background-color: $primaryBackgroundColor-buttons;
+            border: none;
+            outline: none;
+            font-family: $mainfontfamily;
+            font-size: 14px;
+            color: #494949;
+            margin: 0 5px;
+            &:hover {
+                border: 1px solid #c5c5c5;
+                border-radius: 4px;
+                box-shadow: 0px 1px 5px #c5c5c5;
+            }
+        }
+    }
+    .landingPageLanguage {
+        padding-bottom: 325px;
+        margin-top: 25px;
+        font-family: $mainfontfamily;
+        font-size: 13px;
+        color: #494949;
+    }
+}
+
+
+
+
+
+/***********************footer********************/
+
+
+.footerMainDesign {
+    .footerNavbarDesign {
+        display: flex;
+        justify-content: space-between;
+        background-color: $secondaryBackgroundColor-navbar;
+        .firstFooterNavbarUlDesign {
+            list-style: none;
+            display: flex;
+            li {
+                font-family: $mainfontfamily;
+                color: #70757a;
+                padding: 0 15px;
+            }
+        }
+        .secondFooterNavbarDesign {
+            list-style: none;
+            display: flex;
+            li {
+                font-family: $mainfontfamily;
+                color: #70757a;
+                padding: 0 15px;
+            }
+        }
+    }
 }
