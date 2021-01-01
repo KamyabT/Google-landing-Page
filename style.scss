@@ -1,0 +1,40 @@
+$mainfontfamily:arial,sans-serif ;
+
+
+/**********************body***********************/
+
+body {
+    padding: 0px 15px;
+    margin: 0;
+}
+
+/**********************header********************/
+
+.navbarUlDesign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    li {
+        text-decoration: none;
+        list-style: none;
+        font-family: $mainfontfamily;
+        padding: 5px 10px;
+        font-size: 13px;
+        color: #616161;
+    }
+    .productsIcon {
+        font-size: 20px;
+    }
+    .profilePictureDesign img {
+        border-radius: 100px;
+    }
+}
+
+
+
+
+/*************************main***************************/
+
+.mainContentDesign {
+    display: flex;
+}

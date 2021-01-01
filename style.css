@@ -1,0 +1,43 @@
+/**********************body***********************/
+body {
+  padding: 0px 15px;
+  margin: 0;
+}
+
+/**********************header********************/
+.navbarUlDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbarUlDesign li {
+  text-decoration: none;
+  list-style: none;
+  font-family: arial, sans-serif;
+  padding: 5px 10px;
+  font-size: 13px;
+  color: #616161;
+}
+
+.navbarUlDesign .productsIcon {
+  font-size: 20px;
+}
+
+.navbarUlDesign .profilePictureDesign img {
+  border-radius: 100px;
+}
+
+/*************************main***************************/
+.mainContentDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
