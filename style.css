@@ -4,8 +4,11 @@
   padding: 0;
 }
 
+html, body {
+  min-height: 100%;
+}
+
 body {
-  padding: 10px 15px;
   margin: 0;
 }
 
@@ -24,6 +27,7 @@ input[type="text"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 15px;
 }
 
 .navbarUlDesign li {
@@ -58,7 +62,7 @@ input[type="text"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 105px);
 }
 
 .mainContentDesign .mainContentSearchBarDesign {
@@ -113,6 +117,12 @@ input[type="text"] {
 }
 
 /***********************footer********************/
+.footerMainDesign {
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+  border-top: 1px solid #d1d1d1;
+}
+
 .footerMainDesign .footerNavbarDesign {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,7 +130,6 @@ input[type="text"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #f2f2f2;
 }
 
 .footerMainDesign .footerNavbarDesign .firstFooterNavbarUlDesign {
@@ -134,6 +143,7 @@ input[type="text"] {
   font-family: arial, sans-serif;
   color: #70757a;
   padding: 0 15px;
+  font-size: 14px;
 }
 
 .footerMainDesign .footerNavbarDesign .secondFooterNavbarDesign {
@@ -147,5 +157,6 @@ input[type="text"] {
   font-family: arial, sans-serif;
   color: #70757a;
   padding: 0 15px;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
